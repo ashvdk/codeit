@@ -10,6 +10,11 @@ const jwt = require('jsonwebtoken');
 // kitty.save().then(() => console.log('meow'));
 // res.send('<h1>Route is working</h1>');
 
+app.get("/",(req,res)=>{
+    res.send("<h1>You are working fine</h1>");
+})
+
+
 app.post('/signup',(req,res)=>{
     const {email,password} = req.body;
     let myUser;
