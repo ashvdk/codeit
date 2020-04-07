@@ -10,7 +10,7 @@ const jwt = require('jsonwebtoken');
 // kitty.save().then(() => console.log('meow'));
 // res.send('<h1>Route is working</h1>');
 
-app.get("/",(req,res)=>{
+app.get("/",(req,res,next)=>{
     res.send("<h1>You are working fine</h1>");
 })
 
