@@ -5,7 +5,10 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "NODE_ENV=production MONGO_USERNAME=ashvdk MONGO_PASSWORD=I4OqnhVtjKg0q4RJ MONGO_DEFAULT_DATABASE=test node app.js"
+    "build":"cd code-app && npm run build",
+    "install-client":"cd code-app && npm install",
+    "heroku-postbuild":"npm run install-client && npm run build",
+    "start": "node app.js"
   },
   "author": "Ashwin Rao K",
   "license": "ISC",
