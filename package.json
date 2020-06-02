@@ -5,10 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build":"cd code-app && npm run build",
-    "install-client":"cd code-app && npm install",
-    "heroku-postbuild":"npm run install-client && npm run build",
-    "start": "node app.js"
+    "start": "nodemon app.js"
   },
   "author": "Ashwin Rao K",
   "license": "ISC",
